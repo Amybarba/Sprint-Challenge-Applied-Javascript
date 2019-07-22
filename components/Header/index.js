@@ -9,4 +9,13 @@
 //  </div >
 // And add it to the DOM in the .headerContainer component
 
-function Header() {}
+// function Header() {}
+
+class header {
+  constructor(headerArray) {
+    const headerContainer = document.querySelector('.header-container');
+    headerArray.forEach((headerInfo) => {
+      headerContainer.appendChild(this.createHeader(headerInfo));
+    });
+ }
+}
